@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FabMenuLayout_LayoutParams">
+        <attr name="descriptionText" format="string"/>
+        <attr name="descriptionClickTargetId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButtonMenu">
+        <attr name="dimLayerExpandedColor" format="color"/>
+        <attr name="dimLayerCollapsedColor" format="color"/>
+        <attr name="stateAnimationDuration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButtonSwitcher">
+        <attr name="topRevealAnimation" format="reference"/>
+        <attr name="topHideAnimation" format="reference"/>
+        <attr name="bottomRevealAnimation" format="reference"/>
+        <attr name="bottomHideAnimation" format="reference"/>
+    </declare-styleable>
+
+</resources>

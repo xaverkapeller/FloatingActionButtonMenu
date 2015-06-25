@@ -1,0 +1,68 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@android:color/black"
+        android:padding="24dp"/>
+
+    <FrameLayout
+        android:id="@+id/dimLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.github.wrdlbrnft.fabmenu.FloatingActionButtonMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_example_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_example_two"
+            app:descriptionText="@string/description_example_two"
+            app:fabSize="mini"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_example_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_example_one"
+            app:descriptionText="@string/description_example_one"
+            app:fabSize="mini"/>
+
+        <com.github.wrdlbrnft.fabmenu.FloatingActionButtonSwitcher
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:descriptionClickTargetId="@+id/fab_edit"
+            app:descriptionText="@string/description_edit">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@id/fab_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_edit"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_add"/>
+
+        </com.github.wrdlbrnft.fabmenu.FloatingActionButtonSwitcher>
+
+    </com.github.wrdlbrnft.fabmenu.FloatingActionButtonMenu>
+
+</android.support.design.widget.CoordinatorLayout>
